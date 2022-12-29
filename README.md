@@ -1,5 +1,8 @@
 # EvoAlgorithms_2022
- Homework experiment results for evolutionary course.
+ Experiment results for hyperparameter selection in change point detection module in Fedot.Industrial framework.
+ - Evolutionary algorithm based on deap framework.
+ - Evoluation function based on SingularSpectrumTransformation class from Fedot.Industrial framework.
+ - Score function based on TSAD framework.
 
 Dataset loading:
 ```
