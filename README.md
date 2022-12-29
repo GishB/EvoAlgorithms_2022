@@ -19,17 +19,17 @@ Initial parameters:
  - SimpleEA:
  ```
     Best = [135, 31, 14]
-    Best fit = 0.22169811320754718
+    Best fit = 0.221
 ```
 - eaPlusMuLambda:
 ```
     Best = [80, 50, 12]
-    Best fit = 0.21634615384615385
+    Best fit = 0.216
 ```
 - eaMuCommaLambda
 ```
     Best = [16, 92, 10]
-    Best fit = 0.22760290556900728
+    Best fit = 0.227
 ```
 
  Based frameworks: 
