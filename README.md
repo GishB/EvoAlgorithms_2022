@@ -9,6 +9,12 @@ Dataset loading:
     url = "https://storage.yandexcloud.net/cloud-files-public/dataframe.csv"
     df = pd.read_csv(StringIO(requests.get(url).content.decode('utf-8')), sep='|')
 ```
+Example of time series which represent uR/h measurment in a drilling well over oil layer
+![time_series_change_point_detection](https://user-images.githubusercontent.com/90556084/211688121-49f0e024-e93c-45a4-8cf7-e505c1c41f36.png)
+
+Example of true change points in the measrurment which shows rock types differences between themselves in one well.
+![ground_true_labels](https://user-images.githubusercontent.com/90556084/211688473-150ead90-11b8-4bee-99d6-2cbff182c9ac.png)
+
 
 Initial parameters:
 ```
@@ -59,12 +65,21 @@ In addition 10 times run has been done for each evolutionary algorithms. There i
 | eaMuCommaLambda | 0.19 | 0.22 | 10 | 10 |
 
 
+### Final result of hypeparameter selection:
+Use eaMuCommaLambda hyperparameter selection for change point detection task and look at this result:
+```
+best_ind = [21, 28, 12]
+F1_score = 0.22
+```
+
+![predicted_labels](https://user-images.githubusercontent.com/90556084/211688827-1ed7014a-1d74-4cea-8a4f-ceb1ecf8f32e.png)
+
+The result is TP 47, FP 314, FN 5
 
 ## Summary:
 - Proceeding from the results of evolutionary algorithms, it has taken into account that between varOr() and varAnd() the first raises the average result of F1 and show less standard deviation of values and results variation between epochs, which makes evolutionary algorithm more robust.
 
 - The population  lambda selection strategy for eaMuCommaLambda shows better result compare to eaMuPlusLambde. For example according to boxplot F1 score distribution  for the first algorithm are higher and robust than for the second one.
-
 
 Based frameworks: 
  - https://github.com/deap/deap
