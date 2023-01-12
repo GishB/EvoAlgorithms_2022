@@ -60,7 +60,7 @@ In addition 10 times run has been done for each evolutionary algorithms. There i
 
 | Name | Average pop result | The best ind result | epochs | iterations |
 | --- | --- | --- | --- | --- |
-| SimpleEA | 0.16 | 0.21 | 10 | 10 |
+| SimpleEA | 0.16 | 0.22 | 10 | 10 |
 | eaMuPlusLambda | 0.19 | 0.21 | 10 | 10 |
 | eaMuCommaLambda | 0.19 | 0.22 | 10 | 10 |
 
